@@ -1,0 +1,32 @@
+li {
+  padding: 3rem 0;
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 50%;
+    background-color: #1D2731;
+    width: 30rem;
+    height: 30rem;
+    padding: 2rem;
+    img {
+      height: 16rem;
+      width: 16rem;
+      border-radius: 50%;
+    }
+
+    h3 {
+      font-size: 2.4rem;
+      color: #D9B310;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-size: 1.2rem;
+      text-align: center;
+      margin: 1rem 8rem;
+    }
+  }
+}
