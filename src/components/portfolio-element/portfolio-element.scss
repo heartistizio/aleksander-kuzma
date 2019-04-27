@@ -1,15 +1,13 @@
 li {
-  padding: 3rem 0;
+  margin: 0;
+  padding: 0;
   div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    border-radius: 50%;
-    background-color: #1D2731;
-    width: 30rem;
-    height: 30rem;
-    padding: 2rem;
+    justify-content: center;
+    height: 40rem;
+    width: 100%;
     img {
       height: 16rem;
       width: 16rem;
@@ -27,6 +25,9 @@ li {
       font-size: 1.2rem;
       text-align: center;
       margin: 1rem 8rem;
+    }
+    span {
+      color: #1D2731
     }
   }
 }

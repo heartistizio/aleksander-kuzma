@@ -10,21 +10,6 @@ header {
     flex-direction: column;
     align-items: center;
 
-    .carousel {
-      padding: 2rem;
-
-
-      mdb-carousel-item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        img {
-          justify-self: center;
-        }
-      }
-    }
-
   }
 
   &::after {
