@@ -12,20 +12,18 @@ class PortfolioElement extends Component {
     }
 
     flipElement() {
-        console.log("HERE")}
-        const clicked = this.state.clicked;
-        this.setState({ clicked: !clicked });
-
+        console.log("HERE");
+    }
     render() {
-        const data = this.props.data
+        const data = this.props.data;
         return(
             <li>
-                <div className="portfolio-element" onClick={() => this.flipElement()}>
+                <div className="portfolio-element" onClick={(e) => this.flipElement(e)}>
                     {
                         this.state.clicked ?                         
                         <h3>{data.title}</h3> && <span>{data.description}</span>
                         :   
-                        <img src={data.img} alt={data.title}/>
+                        <img src={data.img} alt={data.title} onClick={() => this.flipElement()}/>
                     }
                 </div>
             </li>
