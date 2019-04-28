@@ -18,12 +18,12 @@ class PortfolioElement extends Component {
         const data = this.props.data;
         return(
             <li>
-                <div className="portfolio-element" onClick={(e) => this.flipElement(e)}>
+                <div className="portfolio-element" onClick={() => this.flipElement()}>
                     {
                         this.state.clicked ?                         
                         <h3>{data.title}</h3> && <span>{data.description}</span>
                         :   
-                        <img src={data.img} alt={data.title} onClick={() => this.flipElement()}/>
+                        <img src={data.img} alt={data.title}/>
                     }
                 </div>
             </li>
