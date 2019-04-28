@@ -7,19 +7,19 @@ const portfolioItems = [
     {
         id: 0,
         title: 'First item',
-        img: '/assets/logo.jpg',
+        img: 'https://media.wired.com/photos/5b69f14e61743303b6869f09/master/w_582,c_limit/Stocks-642445090.jpg',
         description: 'I did something'
     },
     {
         id: 1,
         title: 'Second item',
-        img: '/assets/logo.jpg',
+        img: 'https://media.wired.com/photos/5b69f14e61743303b6869f09/master/w_582,c_limit/Stocks-642445090.jpg',
         description: 'I did something again'
     },
     {
         id: 2,
         title: 'FS Ranking',
-        img: '/assets/logo.jpg',
+        img: 'https://media.wired.com/photos/5b69f14e61743303b6869f09/master/w_582,c_limit/Stocks-642445090.jpg',
         description: 'I am gonna do something'
     }
 ]
@@ -38,7 +38,9 @@ class Portfolio extends Component {
         return(
             <section id="portfolio">
                 <div className="portfolio">
-                {portfolioItems.map( e => this.displayPortfolioElement(e))}
+                <ul>
+                    {portfolioItems.map( e => this.displayPortfolioElement(e))}
+                </ul>
                 </div>
             </section>
         )
